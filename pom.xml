@@ -17,8 +17,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>9</source>
+                    <target>9</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -54,6 +54,27 @@
             <groupId>software.amazon.awscdk</groupId>
             <artifactId>sqs</artifactId>
             <version>${cdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>lambda</artifactId>
+            <version>${cdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>apigateway</artifactId>
+            <version>${cdk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awscdk</groupId>
+            <artifactId>dynamodb</artifactId>
+            <version>${cdk.version}</version>
+        </dependency>
+        <!-- Additional Construct Libraries -->
+        <dependency>
+            <groupId>com.github.eladb</groupId>
+            <artifactId>cdk-dynamo-table-viewer</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
         <dependency>
