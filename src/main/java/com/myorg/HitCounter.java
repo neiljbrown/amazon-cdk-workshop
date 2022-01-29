@@ -19,7 +19,9 @@ public class HitCounter extends Construct {
 	private final Table table;
 
 	/**
-	 * @inheritDoc
+	 * @param scope parent of this stack, usually an `App` or a `Stage`, but could be any construct.
+	 * @param id the construct ID of this stack.
+	 * @param props any properties for this stack.
 	 */
 	public HitCounter(Construct scope, String id, HitCounterProps props) {
 		super(scope, id);

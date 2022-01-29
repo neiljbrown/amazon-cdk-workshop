@@ -11,7 +11,7 @@ import software.amazon.awscdk.services.lambda.Function;
 import software.amazon.awscdk.services.lambda.Runtime;
 
 /**
- * An Amazon {@link #Stack CDK Stack} (code representation of a single CloudFormation Stack) that declares the bunch of
+ * An Amazon {@link Stack CDK Stack} (code representation of a single CloudFormation Stack) that declares the bunch of
  * AWS resources that need to be provisioned for this app, using CloudFormation.
  */
 public class AmazonCdkWorkshopStack extends Stack {
@@ -25,6 +25,8 @@ public class AmazonCdkWorkshopStack extends Stack {
      * Creates an instance of this Stack for the specified parent (app) and with the specified construct ID, using the
      * default Stack properties.
      *
+     * @param parent parent of this stack, usually an `App` or a `Stage`, but could be any construct.
+     * @param id the construct ID of this stack.
      * @see AmazonCdkWorkshopStack#AmazonCdkWorkshopStack(Construct, String, StackProps)
      */
     public AmazonCdkWorkshopStack(final Construct parent, final String id) {
@@ -35,6 +37,9 @@ public class AmazonCdkWorkshopStack extends Stack {
      * Creates  an instance of this Stack for the specified parent (app), with the specified construct ID, and using the
      * specified {@link StackProps Stack Properties}
      *
+     * @param parent parent of this stack, usually an `App` or a `Stage`, but could be any construct.
+     * @param id the construct ID of this stack.
+     * @param props any properties for this stack.
      * @see Stack#Stack(software.constructs.Construct, String, StackProps)
      */
     public AmazonCdkWorkshopStack(final Construct parent, final String id, final StackProps props) {
