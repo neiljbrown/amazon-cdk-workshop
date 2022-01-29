@@ -1,4 +1,4 @@
-package com.myorg;
+package com.neiljbrown.awscdkworkshop;
 
 import software.amazon.awscdk.services.lambda.IFunction;
 
